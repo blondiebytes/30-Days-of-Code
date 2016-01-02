@@ -29,20 +29,20 @@ public class Car {
         maxSpeed = maxSpeed + 1;
     }
     
-//    public void wreckCar() {
-//        condition = 'C';
-//    }
+    public void wreckCar() {
+        condition = 'C';
+    }
     
-    public static void main(String[] args) {
+    public static void main(String[] args) throws CloneNotSupportedException {
         Car familyCar = new Car();
         System.out.println("Family's Car:");
         familyCar.printVariables();
         familyCar.upgradeMinSpeed();
         familyCar.printVariables();
-        // Car aliceCar = familyCar
-        // familyCar.wreckCar();
-        // System.out.println("Alice's Car:");
-        // aliceCar.printVariables();
+        Car aliceCar = (Car) familyCar.clone();
+        familyCar.wreckCar();
+        System.out.println("Alice's Car:");
+        aliceCar.printVariables();
     }
     
 }
