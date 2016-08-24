@@ -10,7 +10,7 @@
           in.nextLine();
         
           for(int i=0;i<n;i++){
-            String name=in.nextLine();
+            String name=in.next();
             int phone=in.nextInt();
             map.put(name, phone);
             in.nextLine();
