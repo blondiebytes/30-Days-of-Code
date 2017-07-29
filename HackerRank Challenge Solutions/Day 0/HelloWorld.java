@@ -4,6 +4,6 @@
         
        		System.out.println("Hello World.");
             System.out.println("Welcome to 30 Days of Code.");
-        
+        //I love this coding exercise
     	}
 	}
