@@ -3,7 +3,8 @@
 
 
 int main() {
-    printf("Hello World");
-    printf("Welcome to 30 Days of Code");
-    
+    char ch[100];
+    gets(ch);
+    printf("hello world.\n%s",ch);
+    return 0;
 }
